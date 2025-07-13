@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#timer {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e63946;
+}
+
+#question {
+  margin-bottom: 15px;
+}
+
+#answers button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#answers button:hover {
+  background-color: #b8b8b8;
+}
+
+#next-btn {
+  padding: 10px 20px;
+  background-color: #48cae4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+#score-card {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
